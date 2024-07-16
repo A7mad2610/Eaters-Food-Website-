@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive ;    
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+}
+::-webkit-scrollbar{
+    width:7px;
+    background:#ffffffb1;   
+}
+::-webkit-scrollbar-thumb{
+    width:7px;
+    background: #ff011a;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:url(image/Cooking\ Delicious\ Top\ View\ Of\ Pizza\ On\ A\ Textured\ Gray\ Background\ Concept\ Backgrounds\ _\ JPG\ Free\ Download\ -\ Pikbest.jfif);
+    background-size:1300px 800px ;
+        /* background:url(image/Premium\ Photo\ _\ Fork\ with\ pieces\ of\ delicious\ barbecued\ meat\ on\ black\ background.jfif) ;
+        background-size: 1400px 700px;
+        background-repeat: no-repeat;
+        background-position-x:0px ;
+        background-position-y: 0px; */
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header .logo{
+    margin: 15px;
+    color: #ff011a;
+    font-size: 30px;
+
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li a{
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 20px;
+    transition: all .3s ease;
+}
+header ul li a:hover{
+    color: #ff011a;
+    letter-spacing: 2px;
+}
+#Login ,#SignUp{
+    background:#7c0713 ;
+    font-size: 15px;
+    margin:10px ;
+    border-radius: 15px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+#Login:hover #SignUp:hover{
+    background: #ff1129;
+}
+.container{
+    width:700px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#loginbox{
+    width: 450px;
+    height: 500px;
+    background-color:rgba(225, 225, 225, 0.1) ;
+    margin-top:  20px ;
+    padding: 50px;
+    border-radius: 20px;
+    position: absolute;
+    transition: all 1s ease;
+}
+#loginbox .txt{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#loginbox .txt h1{
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#loginbox .txt h3{
+    color: #fff;
+    margin: 30px 0px  10px 0px;
+    font-weight: 400;
+}
+#loginbox .txt h3 span{
+    color: #ff021b;
+    margin: 10px 
+    0;
+    font-weight: 400;
+}
+#loginbox .input{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 5px;
+}
+#loginbox .input input{
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 0px;
+    color: #fff;
+    border: solid 2px #fff;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    transition: all .2s ease;
+}
+#loginbox .input input:hover{
+    scale: 1.1;
+}
+#loginbox .input input::placeholder{
+    font-size: 15px;
+    color: #ff021bab;
+}
+#loginbox .check-forgot{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#loginbox .check-forgot .check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loginbox .check-forgot .check label{
+    font-size: 13px;
+    color: #fff;
+    margin-left: 4px;
+}
+#loginbox .check-forgot .forgot a{
+    font-size: 13px;
+    color: #fff;
+}
+#loginbox .btn{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#loginbox .btn a{
+    background-color: #201c1c;
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    padding: 20px;
+    border:none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+}
+#loginbox .btn a:hover{
+    background-color: #0c0c0c;
+}
+/* ________________________________ */
+
+
+
+#signupbox{
+    width: 450px;
+    height: 500px;
+    background-color:rgba(225, 225, 225, 0.1) ;
+    margin-top:  20px ;
+    padding: 50px;
+    border-radius: 20px;
+    position: absolute;
+    left:700px;
+    transition: all 1s ease;
+}
+#signupbox .txt{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#signupbox .txt h1{
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#signupbox .txt h3{
+    color: #fff;
+    margin: 30px 0px  10px 0px;
+    font-weight: 400;
+}
+#signupbox .txt h3 span{
+    color: #ff021b;
+    margin: 10px 
+    0;
+    font-weight: 400;
+}
+#signupbox .input{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 5px;
+}
+#signupbox .input .name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#signupbox .input input{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 0px;
+    color: #fff;
+    border: solid 2px #fff;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    transition: all .2s ease;
+}
+#signupbox .input input:hover{
+    scale: 1.1;
+}
+
+#signupbox .input .name input{
+    width: 48%;
+}
+#signupbox .input input::placeholder{
+    font-size: 15px;
+    color: #ff021bab;
+}
+#signupbox .check-forgot{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#signupbox .check-forgot .check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signupbox .check-forgot .check label{
+    font-size: 13px;
+    color: #fff;
+    margin-left: 4px;
+}
+#signupbox .check-forgot .forgot a{
+    font-size: 13px;
+    color: #fff;
+}
+#signupbox .btn{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#signupbox .btn a{
+    background-color: #201c1c;
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    padding: 20px;
+    border:none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+}
+#signupbox .btn a:hover{
+    background-color: #0c0c0c;
+}

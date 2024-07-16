@@ -1,0 +1,712 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+}
+::-webkit-scrollbar{
+    width:7px;
+    background:#ffffffb1;   
+}
+::-webkit-scrollbar-thumb{
+    width:7px;
+    background: #ff011a;
+}
+body{
+    background-color: #0c0c0c;
+}
+.homepage{
+    background-image:url(image/Cooking\ Delicious\ Top\ View\ Of\ Pizza\ On\ A\ Textured\ Gray\ Background\ Concept\ Backgrounds\ _\ JPG\ Free\ Download\ -\ Pikbest.jfif);
+    width: 100%;
+    height: 60vh;
+    background-size:1300px 800px ;
+    box-shadow: 0 15px 20px 5px #1d1921 ;
+
+    /* background:url(image/Premium\ Photo\ _\ Fork\ with\ pieces\ of\ delicious\ barbecued\ meat\ on\ black\ background.jfif) ;
+    background-size: 1400px 700px;
+    background-repeat: no-repeat;
+    background-position-x:0px ;
+    background-position-y: 0px; */
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image:linear-gradient(to left,rgb(29 37 45),rgba(0, 0, 0, 0.249)) ;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px); */
+    width: 100%;
+    height: 60px;
+    /* position: fixed;
+    z-index: 1; */
+}
+.logo{
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #da061b;
+    text-decoration: none;
+    padding: 5px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none; 
+    color: #ffffffd0;
+    margin: 20px;
+    font-size: 20px;
+    transition: all .4s ease;
+    padding: 5px;
+}
+ul li a:hover{
+    color: #ff051e;
+    letter-spacing: 1px;
+}
+#Login{
+    background: rgba(255, 255, 255, 0.039);
+    font-size: 17px;
+    border: solid 1px white;
+    margin:25px ;
+    border-radius: 18px;
+    width: fit-content;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+#Login:hover{
+    background: #ff021b;
+    letter-spacing: 1px;
+}
+.homepage .content{
+    width: 80%;
+    margin-left: 10%;
+    height: 50vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.homepage .content h2{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.homepage .content h2 span{
+    color: #ff021b;
+    font-size:55px;
+}
+.homepage .content h3{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+.menupage {
+    width: 95%;
+    height:fit-content;
+    margin-left: 2.5%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    background-color: #120f18;
+    padding: 50px;
+    border-radius: 20px;
+
+}
+.menupage .pizza{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;   
+}
+.menupage .pizza .title{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16141a;
+    border-radius: 20px;
+    padding: 30px;
+}
+.menupage .pizza .title h2{
+    color: #ff051e;
+    font-size: 40px;
+}
+
+
+.pizza .item{
+    width: 300px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #16141a;
+}
+.pizza .item .img{
+    width: 50%;
+    height: 180px;
+    height: fit-content;
+}
+.pizza .item .img img{
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
+}
+.pizza .item .info{
+    width: 50%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pizza .item .info h3{
+    font-size:25px;
+    color: #ff051e;
+    padding: 5px 5px;
+}
+.pizza .item .info p{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px;
+}
+.pizza .item .info h4{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px 10px 5px;
+}
+.pizza .item .info h4 del{
+    font-size:15px;
+    color: #ff051e;
+}
+.pizza .item .info button{
+    background-color: #b90517;
+    font-size: 17px;
+    border: none;
+    border-radius: 18px;
+    width: fit-content;
+    text-align: center;
+    padding: 7px 13px 7px 13px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.pizza .item .info button:focus{
+    background-color: #27222d;
+}
+.pizza .item .info button:hover{
+    background-color: #fff;
+    color: #b90517;
+    scale: 1.03;
+}
+/* ---------------------------- */
+
+
+.menupage .burger{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;   
+}
+.menupage .burger .title{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16141a;
+    border-radius: 20px;
+    padding: 30px;
+}
+.menupage .burger .title h2{
+    color: #ff051e;
+    font-size: 40px;
+}
+
+
+.burger .item{
+    width: 300px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #16141a;
+}
+.burger .item .img{
+    width: 50%;
+    height: 180px;
+    height: fit-content;
+}
+.burger .item .img img{
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
+}
+.burger .item .info{
+    width: 50%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.burger .item .info h3{
+    font-size:25px;
+    color: #ff051e;
+    padding: 5px 5px;
+}
+.burger .item .info p{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px;
+}
+.burger .item .info h4{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px 10px 5px;
+}
+.burger .item .info h4 del{
+    font-size:15px;
+    color: #ff051e;
+}
+.burger .item .info button{
+    background-color: #b90517;
+    font-size: 17px;
+    border: none;
+    border-radius: 18px;
+    width: fit-content;
+    text-align: center;
+    padding: 7px 13px 7px 13px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.burger .item .info button:focus{
+    background-color: #27222d;
+}
+.burger .item .info button:hover{
+    background-color: #fff;
+    color: #b90517;
+    scale: 1.03;
+}
+/* ---------------------------- */
+
+
+
+
+
+
+
+
+/* ---------------------------------- */
+.menupage .Meat{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;   
+}
+.menupage .Meat .title{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16141a;
+    border-radius: 20px;
+    padding: 30px;
+}
+.menupage .Meat .title h2{
+    color: #ff051e;
+    font-size: 40px;
+}
+
+
+.Meat .item{
+    width: 300px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #16141a;
+}
+.Meat .item .img{
+    width: 50%;
+    height: 180px;
+    height: fit-content;
+}
+.Meat .item .img img{
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
+}
+.Meat .item .info{
+    width: 50%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Meat .item .info h3{
+    font-size:25px;
+    color: #ff051e;
+    padding: 5px 5px;
+}
+.Meat .item .info p{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px;
+}
+.Meat .item .info h4{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px 10px 5px;
+}
+.Meat .item .info h4 del{
+    font-size:15px;
+    color: #ff051e;
+}
+.Meat .item .info button{
+    background-color: #b90517;
+    font-size: 17px;
+    border: none;
+    border-radius: 18px;
+    width: fit-content;
+    text-align: center;
+    padding: 7px 13px 7px 13px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.Meat .item .info button:focus{
+    background-color: #27222d;
+}
+.Meat .item .info button:hover{
+    background-color: #fff;
+    color: #b90517;
+    scale: 1.03;
+}
+/* ---------------------------- */
+
+
+
+
+
+/* ---------------------------------- */
+.menupage .salads{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;   
+}
+.menupage .salads .title{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16141a;
+    border-radius: 20px;
+    padding: 30px;
+}
+.menupage .salads .title h2{
+    color: #ff051e;
+    font-size: 40px;
+}
+
+
+.salads .item{
+    width: 300px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #16141a;
+}
+.salads .item .img{
+    width: 50%;
+    height: 180px;
+    height: fit-content;
+}
+.salads .item .img img{
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
+}
+.salads .item .info{
+    width: 50%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.salads .item .info h3{
+    font-size:25px;
+    color: #ff051e;
+    padding: 5px 5px;
+}
+.salads .item .info p{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px;
+}
+.salads .item .info h4{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px 10px 5px;
+}
+.salads .item .info h4 del{
+    font-size:15px;
+    color: #ff051e;
+}
+.salads .item .info button{
+    background-color: #b90517;
+    font-size: 17px;
+    border: none;
+    border-radius: 18px;
+    width: fit-content;
+    text-align: center;
+    padding: 7px 13px 7px 13px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.salads .item .info button:focus{
+    background-color: #27222d;
+}
+.salads .item .info button:hover{
+    background-color: #fff;
+    color: #b90517;
+    scale: 1.03;
+}
+/* ---------------------------- */
+
+
+
+
+/* ---------------------------------- */
+.menupage .Drinks{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;   
+}
+.menupage .Drinks .title{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16141a;
+    border-radius: 20px;
+    padding: 30px;
+}
+.menupage .Drinks .title h2{
+    color: #ff051e;
+    font-size: 40px;
+}
+
+
+.Drinks .item{
+    width: 300px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #16141a;
+}
+.Drinks .item .img{
+    width: 50%;
+    height: 180px;
+    height: fit-content;
+}
+.Drinks .item .img img{
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
+}
+.Drinks .item .info{
+    width: 50%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Drinks .item .info h3{
+    font-size:25px;
+    color: #ff051e;
+    padding: 5px 5px;
+}
+.Drinks .item .info p{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px;
+}
+.Drinks .item .info h4{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px 10px 5px;
+}
+.Drinks .item .info h4 del{
+    font-size:15px;
+    color: #ff051e;
+}
+.Drinks .item .info button{
+    background-color: #b90517;
+    font-size: 17px;
+    border: none;
+    border-radius: 18px;
+    width: fit-content;
+    text-align: center;
+    padding: 7px 13px 7px 13px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.Drinks .item .info button:focus{
+    background-color: #27222d;
+}
+.Drinks .item .info button:hover{
+    background-color: #fff;
+    color: #b90517;
+    scale: 1.03;
+}
+/* ---------------------------- */
+
+
+
+
+/* ---------------------------------- */
+.menupage .Deesert{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;   
+}
+.menupage .Deesert .title{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16141a;
+    border-radius: 20px;
+    padding: 30px;
+}
+.menupage .Deesert .title h2{
+    color: #ff051e;
+    font-size: 40px;
+}
+
+
+.Deesert .item{
+    width: 300px;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #16141a;
+}
+.Deesert .item .img{
+    width: 50%;
+    height: 180px;
+    height: fit-content;
+}
+.Deesert .item .img img{
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
+}
+.Deesert .item .info{
+    width: 50%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Deesert .item .info h3{
+    font-size:25px;
+    color: #ff051e;
+    padding: 5px 5px;
+}
+.Deesert .item .info p{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px;
+}
+.Deesert .item .info h4{
+    font-size:15px;
+    color: #fff;
+    padding:5px 5px 10px 5px;
+}
+.Deesert .item .info h4 del{
+    font-size:15px;
+    color: #ff051e;
+}
+.Deesert .item .info button{
+    background-color: #b90517;
+    font-size: 17px;
+    border: none;
+    border-radius: 18px;
+    width: fit-content;
+    text-align: center;
+    padding: 7px 13px 7px 13px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.Deesert .item .info button:focus{
+    background-color: #27222d;
+}
+.Deesert .item .info button:hover{
+    background-color: #fff;
+    color: #b90517;
+    scale: 1.03;
+}
+/* ---------------------------- */
+
+
+
